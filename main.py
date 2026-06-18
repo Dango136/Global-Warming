@@ -39,4 +39,8 @@ def send_gw(message):
     for i, q in enumerate(themes):
         keyboard.add(InlineKeyboardButton(q, callback_data=f'theme {i}'))
     bot.send_message(message.chat.id, f'Выберите тему: ',reply_markup=keyboard)
+@bot.callback_query_handler(lambda call: 'theme' in call.data)
+def call_data(callback):
+    index = int(callback.data.split([1]))
+    bot.send_message(callback.message.chat.id, answers[index])
 bot.infinity_polling()
