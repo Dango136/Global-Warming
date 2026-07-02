@@ -10,7 +10,4 @@ This TG Bot will explain what is Global Warming and what we can do to slow it do
 ## Commands:
 + ```/start``` - The bot will show user the greeting message.
 + ```/help``` - Shows the full list of commands.
-+ ```/gw``` - The bot will tell the user what is the Global Warming.
-+ ```/reasons``` - The bot will tell the user why is Global Warming happening or why does it affect it's spreading.
-+ ```/actions``` - The bot will tell the user what people can do to slow down the Global Warming or not to make it go faster.
-
++ ```/gw``` - The bot will show a set of few buttons, each one offering the user to get the answer to the specific question.
